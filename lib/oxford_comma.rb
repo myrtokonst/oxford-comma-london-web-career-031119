@@ -4,8 +4,8 @@ if array.count == 1
 elsif array.count==2 
 return array.join("and")
 else 
-  array.pop()
+  last = array.pop()
   string =array.join(",")
-  string << "and"+ array.pop()
+  string << " and "+ last
 end 
 end

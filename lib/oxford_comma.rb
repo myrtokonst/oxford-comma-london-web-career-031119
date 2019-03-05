@@ -3,6 +3,9 @@ if array.count == 1
   return array.join
 elsif array.count==2 
 return array.join("and")
-else array.join(",","and")
+else 
+  array.pop()
+  string =array.join(",")
+  string << "and"+ array.pop()
 end 
 end
